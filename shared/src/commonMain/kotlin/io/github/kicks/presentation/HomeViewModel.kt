@@ -1,83 +1,79 @@
 package io.github.kicks.presentation
 
 import io.github.kicks.data.Audio
+import org.chaintech.app.utility.getLocalFilePathFor
 
 class HomeViewModel {
 
+    fun getAudios(): List<Audio>{
+        return listOf(
+            Audio(
+                streamUrl = getLocalFilePathFor("Luis Miguel Del Amargue - La Magia De Tus Ojos (bachata).mp3"),
+                imageUrl = "1.jpeg",
+                artists = "Luis Miguel Del Amargue",
+                title = "Local - La Magia De Tus Ojos",
+                duration = "6:12",
+            ),
 
-     fun getAudios(): List<Audio>{
-       return listOf(
-           Audio(
-               streamUrl = "https://cdn.pixabay.com/download/audio/2022/12/13/audio_a7eaf8e68b.mp3",
-               imageUrl = "1.jpeg",
-               artists = "Setze",
-               title = "Thinkin About You (Radio Edit)",
-               duration = "2:51",
-           ),
-           Audio(
-               streamUrl = "https://cdn.pixabay.com/download/audio/2022/04/29/audio_b41f9553b2.mp3",
-               imageUrl = "2.jpeg",
-               artists = "Leonell Cassio",
-               title = "Stuck In A Dream",
-               duration = "4:58",
-           ),
-           Audio(
-               streamUrl = "https://cdn.pixabay.com/download/audio/2022/01/26/audio_2694da1938.mp3",
-               imageUrl = "3.png",
-               artists = "Gvidon",
-               title = "Success Starts With A Dream",
-               duration = "2:01",
-           ),
-           Audio(
-               streamUrl = "https://naijaloaded.store/assets/uploads/Asake-2-30.mp3",
-               imageUrl = "4.png",
-               artists = "Asake",
-               title = "2:30",
-               duration = "2:18",
-           ),
-           Audio(
-               streamUrl = "https://naijaloaded.store/wp-content/uploads/2022/02/Rema-%E2%80%93-Calm-Down.mp3",
-               imageUrl = "5.png",
-               artists = "Rema",
-               title = "Calm down",
-               duration = "3:39",
-           ),
-           Audio(
-               streamUrl = "https://cdn.pixabay.com/download/audio/2023/04/12/audio_6922b1de38.mp3",
-               imageUrl = "6.jpeg",
-               artists = "Matthew Mark",
-               title = "Happy Tears",
-               duration = "1:59",
-           ),
-           Audio(
-               streamUrl = "https://cdn.pixabay.com/download/audio/2022/03/23/audio_41f668f967.mp3",
-               imageUrl = "7.png",
-               artists = "Nesrality",
-               title = "Irish Folklore",
-               duration = "2:27",
-           ),
-           Audio(
-               streamUrl = "https://cdn.pixabay.com/download/audio/2022/03/23/audio_41f668f967.mp3",
-               imageUrl = "8.jpeg",
-               artists = "Norished",
-               title = "Irish Sitar",
-               duration = "2:07",
-           ),
-           Audio(
-               streamUrl = "https://cdn.pixabay.com/download/audio/2022/11/06/audio_c1e6eebf61.mp3",
-               imageUrl = "9.jpeg",
-               artists = "SoulProd",
-               title = "Game",
-               duration = "2:10",
-           ),
-           Audio(
-               streamUrl = "https://cdn.pixabay.com/download/audio/2022/12/28/audio_e232e79ed8.mp3",
-               imageUrl = "10.jpeg",
-               artists = "Roma Records",
-               title = "Against the stream",
-               duration = "2:44",
-           ),
+            Audio(
+                streamUrl = getLocalFilePathFor("Frank_Reyes_Dame_Algo_De_Ti-Cuando_Se_Quiere_Se_Puede.mp3"),
+                imageUrl = "1.jpeg",
+                artists = "Frank Reyes",
+                title = "Local - Dame Algo De Ti - Cuando Se Quiere Se Puede",
+                duration = "3:28",
+            ),
+            Audio(
+                streamUrl = "https://pub-9c8e58aa978e4e24b9c47bd08834208c.r2.dev/nuevaeltorito.mp3",
+                imageUrl = "1.jpeg",
+                artists = "Hector Acosta",
+                title = "nueva el torito",
+                duration = "4:03",
+            ),
+            Audio(
+                streamUrl = "https://pub-9c8e58aa978e4e24b9c47bd08834208c.r2.dev/Bachata%20-%20Luis%20Vargas%20-%20Inocente.mp3",
+                imageUrl = "1.jpeg",
+                artists = "Luis Vargas",
+                title = "Inocente",
+                duration = "5:01",
+            ),
 
-       )
+            Audio(
+                streamUrl = "https://pub-9c8e58aa978e4e24b9c47bd08834208c.r2.dev/ANTHONY%20SANTOS%20-%20Donde%20Estara%20-%20BACHATA%20-%2000.mp3",
+                imageUrl = "1.jpeg",
+                artists = "Antony Santos",
+                title = "Donde Estera",
+                duration = "4:56",
+            ),
+
+            Audio(
+                streamUrl = "https://pub-9c8e58aa978e4e24b9c47bd08834208c.r2.dev/Luis%20Miguel%20del%20Amargue%20-%20Se%20Acabo%20Lo%20Bonito(04).mp3",
+                imageUrl = "1.jpeg",
+                artists = "Luis Miguel del Amargue",
+                title = "Se Acabo Lo Bonito",
+                duration = "4:07",
+            ),
+            Audio(
+                streamUrl = "https://pub-9c8e58aa978e4e24b9c47bd08834208c.r2.dev/02%20-%20Solo%20Quiereme.mp3",
+                imageUrl = "1.jpeg",
+                artists = "Raulin Rodriguez",
+                title = "Piel Sin Alma",
+                duration = "5:42",
+            ),
+            Audio(
+                streamUrl = "https://pub-9c8e58aa978e4e24b9c47bd08834208c.r2.dev/04%20-%20Amor%20De%20Una%20Noche.mp3",
+                imageUrl = "1.jpeg",
+                artists = "Luis Miguel Del Amargue",
+                title = "Amor De Una Noche",
+                duration = "4:58",
+            ),
+            Audio(
+                streamUrl = "https://pub-9c8e58aa978e4e24b9c47bd08834208c.r2.dev/01%20-%20Ding%20Dong.mp3",
+                imageUrl = "1.jpeg",
+                artists = "Luis Miguel Del Amargue",
+                title = "Ding Dong",
+                duration = "4:39",
+            ),
+
+            )
     }
 }
